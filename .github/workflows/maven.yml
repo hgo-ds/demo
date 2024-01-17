@@ -33,4 +33,5 @@ jobs:
       - name: Update dependency graph
         with:
           directory: ./java
+          ignore-maven-wrapper: true
         uses: advanced-security/maven-dependency-submission-action@fcd7eab6b6d22946badc98d1e62665cdee93e0ae
