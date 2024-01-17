@@ -6,6 +6,8 @@
     </picture>
 </h1>
 
+[![Java CI with Maven](https://github.com/hgo-ds/dependabot-demo/actions/workflows/maven.yml/badge.svg)](https://github.com/hgo-ds/dependabot-demo/actions/workflows/maven.yml)
+
 # Dependabot Demo Repository
 
 This repo contains some projects with outdated dependencies. Fork it to try out
