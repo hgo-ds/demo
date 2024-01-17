@@ -10,5 +10,4 @@ class DemoApplicationTests {
   void contextLoads() {
     // empty on purpose
   }
-
 }
