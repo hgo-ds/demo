@@ -13,3 +13,10 @@ updates:
     directory: "/ruby"
     schedule:
       interval: "daily"
+  - package-ecosystem: maven
+    directory: "/"
+    schedule:
+      interval: daily
+#    ignore:
+#      # ignore Maven APIs/SPIs
+#      - dependency-name: org.apache.maven:*
