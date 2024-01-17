@@ -1,5 +1,7 @@
 package de.hgo.demo;
 
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,8 +19,11 @@ public class DemoApplication {
   }
 
   @GetMapping("/hello")
-  public String hello(@RequestParam(value = "name", defaultValue = "World") final String name) {
+  public void hello(@RequestParam(value = "name", defaultValue = "World") final String name,
+      final HttpServletResponse response) throws IOException {
+
     log.info("Hello for {}", name);
-    return String.format("Hello %s!", name);
+
+    response.getWriter().print("Hello " + name + "!");
   }
 }
