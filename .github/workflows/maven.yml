@@ -34,4 +34,4 @@ jobs:
         with:
           directory: ./java
           ignore-maven-wrapper: true
-        uses: advanced-security/maven-dependency-submission-action@fcd7eab6b6d22946badc98d1e62665cdee93e0ae
+        uses: advanced-security/maven-dependency-submission-action@bfd2106013da0957cdede0b6c39fb5ca25ae375e
